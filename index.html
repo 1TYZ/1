@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>万物互联、极致体验</title>
+    <!-- 引入 FontAwesome 图标样式 -->
+    <link rel="stylesheet" href="素材/font-awesome.min.css">
+
+    <style>
+        /* 定义本地书法字体 */
+        @font-face {
+            font-family: 'ShuFa';
+            src: url('素材/fonts/书法.ttf') format('truetype');
+        }
+
+        /* 全局重置样式 */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Microsoft YaHei', Arial, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            padding: 50px 20px;
+            background-color: #fff;
+        }
+
+        /* 主容器，限制最大宽度并居中 */
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        /* 1. 顶部大标题（使用本地书法字体） */
+        h1.main-title {
+            text-align: center;
+            font-family: 'ShuFa', serif;
+            font-size: 3rem;
+            margin-bottom: 60px;
+            letter-spacing: 4px;
+            font-weight: normal;
+        }
+
+        /* 2. 中间左右两列介绍区 */
+        .intro-section {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            margin-bottom: 80px;
+        }
+
+        .intro-item {
+            flex: 0 0 48%;
+            text-align: center;
+        }
+
+        .intro-item .icon-wrapper {
+            width: 80px;
+            margin: 0 auto 20px auto;
+        }
+
+        .intro-item p {
+            font-size: 14px;
+            color: #555;
+            text-align: justify;
+        }
+
+        /* 3. 底部四列平台支持区 */
+        .platforms-title {
+            text-align: center;
+            font-size: 20px;
+            margin-bottom: 50px;
+        }
+
+        .platforms-section {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+        }
+
+        .platform-item {
+            flex: 0 0 23%;
+            text-align: center;
+        }
+
+        .platform-item .icon-wrapper {
+            width: 50px;
+            margin: 0 auto 15px;
+        }
+
+        .platform-item .icon-wrapper img {
+            width: 100%;
+            display: block;
+        }
+
+        .platform-item p {
+            font-size: 13px;
+            color: #666;
+        }
+
+        /* 响应式适配 */
+        @media (max-width: 768px) {
+            .intro-section, .platforms-section {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .intro-item, .platform-item {
+                flex: 1;
+                width: 100%;
+                margin-bottom: 40px;
+                text-align: center;
+            }
+
+            .intro-item p {
+                text-align: center;
+            }
+        }
+    </style>
+</head>
+<body>
+<div class="container">
+    <!-- 顶部标题 -->
+    <h1 class="main-title">万物互联、极致体验</h1>
+
+    <!-- 中间左右两列介绍 -->
+    <div class="intro-section">
+        <!-- 左侧：HTML5 -->
+        <div class="intro-item">
+            <div class="icon-wrapper">
+                <img src="素材/images/1.png" alt="HTML5 Logo">
+            </div>
+            <p>
+                【HTML5】HTML5不仅仅是HTML规范的当前最新版本。HTML5
+                进化的重大意义还在于于HTML5从技术层面带来了八个类别的革
+                新。HTML5规范以"用户至上"为宗。也就是说在遇到冲突
+                时，规范的优先级为：用户>页面编写者>实现者（浏览器）>规范开
+                发者（W3C/WHATWG）>纯理论。除此之外，HTML5还引入了
+                一种新的安全模型来保证HTML5足够安全。
+            </p>
+        </div>
+        <!-- 右侧：CSS3 -->
+        <div class="intro-item">
+            <div class="icon-wrapper">
+                <img src="素材/images/2.png" alt="CSS3 Logo">
+            </div>
+            <p>
+                【CSS3】CSS3是CSS技术的最新版本，它在CSS2.1的基础上进行了大量的扩展和增强。CSS3模块化设计使得浏览器可以逐步支持新特性，而不需要等待整个规范的完成。CSS3引入了许多新特性，包括选择器增强、盒模型改进、文本效果、背景增强、边框美化、渐变、阴影、转换、动画以及多列布局等。这些新特性极大地丰富了网页的视觉效果和交互体验。
+            </p>
+        </div>
+    </div>
+
+    <!-- 底部平台支持 -->
+    <h2 class="platforms-title">平台支持</h2>
+    <div class="platforms-section">
+        <!-- 图标 3 -->
+        <div class="platform-item">
+            <div class="icon-wrapper">
+                <img src="素材/images/3.png" alt="原生移动APP开发">
+            </div>
+            <p>原生移动APP开发</p>
+        </div>
+        <!-- 图标 4 -->
+        <div class="platform-item">
+            <div class="icon-wrapper">
+                <img src="素材/images/4.png" alt="微信公共平台开发">
+            </div>
+            <p>微信公共平台开发</p>
+        </div>
+        <!-- 图标 5 -->
+        <div class="platform-item">
+            <div class="icon-wrapper">
+                <img src="素材/images/5.png" alt="网站开发">
+            </div>
+            <p>网站开发</p>
+        </div>
+        <!-- 图标 6 -->
+        <div class="platform-item">
+            <div class="icon-wrapper">
+                <img src="素材/images/6.png" alt="桌面应用开发">
+            </div>
+            <p>桌面应用开发</p>
+        </div>
+    </div>
+</div>
+</body>
+</html>
